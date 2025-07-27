@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Food - Authentic Hyderabad Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Happy Food</h2>
+                <span>Authentic Hyderabad Cuisine</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Happy Food</h1>
+            <p>Experience the authentic flavors of Hyderabad's legendary cuisine</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Book Table</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Hyderabad Biryani">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Happy Food brings you the authentic taste of Hyderabad, the city of pearls and biryani. Our recipes have been passed down through generations, preserving the rich culinary heritage of the Nizams.</p>
+                    <p>From the aromatic Hyderabadi Biryani to the spicy Mirchi ka Salan, every dish tells a story of tradition, passion, and love for food that has made Hyderabad famous worldwide.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Authentic Recipes</h3>
+                            <p>Traditional recipes passed down through generations</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Fresh Ingredients</h3>
+                            <p>Only the finest and freshest ingredients used</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h3>Made with Love</h3>
+                            <p>Every dish prepared with care and passion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Hyderabad Charminar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Special Menu</h2>
+            <p>Discover the authentic flavors of Hyderabad</p>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="starters">Starters</button>
+                <button class="category-btn" data-category="main-course">Main Course</button>
+                <button class="category-btn" data-category="biryani">Biryani</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Chicken 65">
+                    <div class="menu-item-content">
+                        <h3>Chicken 65</h3>
+                        <p>Spicy deep-fried chicken with curry leaves and spices</p>
+                        <span class="price">₹350</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Veg Pakora">
+                    <div class="menu-item-content">
+                        <h3>Veg Pakora</h3>
+                        <p>Crispy fritters made with mixed vegetables</p>
+                        <span class="price">₹180</span>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-item" data-category="main-course">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Butter Chicken">
+                    <div class="menu-item-content">
+                        <h3>Butter Chicken</h3>
+                        <p>Creamy tomato-based curry with tender chicken</p>
+                        <span class="price">₹450</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="main-course">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dal Makhani">
+                    <div class="menu-item-content">
+                        <h3>Dal Makhani</h3>
+                        <p>Slow-cooked black lentils with cream and butter</p>
+                        <span class="price">₹280</span>
+                    </div>
+                </div>
+
+                <!-- Biryani -->
+                <div class="menu-item" data-category="biryani">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Hyderabadi Biryani">
+                    <div class="menu-item-content">
+                        <h3>Hyderabadi Biryani</h3>
+                        <p>Famous aromatic rice dish with tender meat</p>
+                        <span class="price">₹550</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="biryani">
+                    <img src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Veg Biryani">
+                    <div class="menu-item-content">
+                        <h3>Veg Biryani</h3>
+                        <p>Fragrant rice with mixed vegetables and spices</p>
+                        <span class="price">₹380</span>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Gulab Jamun">
+                    <div class="menu-item-content">
+                        <h3>Gulab Jamun</h3>
+                        <p>Sweet milk dumplings in sugar syrup</p>
+                        <span class="price">₹120</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Rasmalai">
+                    <div class="menu-item-content">
+                        <h3>Rasmalai</h3>
+                        <p>Soft cheese patties in sweetened milk</p>
+                        <span class="price">₹150</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>A glimpse into our culinary journey</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Hyderabad Charminar">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Biryani">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Restaurant Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Indian Food">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dal">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dessert">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Visit us for an unforgettable dining experience</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Food Street, Banjara Hills<br>Hyderabad, Telangana 500034</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@happyfood.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Opening Hours</h3>
+                                <p>Mon-Sun: 11:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Book a Table</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Table</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Happy Food</h3>
+                    <p>Bringing the authentic taste of Hyderabad to your table since 1995.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Popular Dishes</h3>
+                    <ul>
+                        <li>Hyderabadi Biryani</li>
+                        <li>Butter Chicken</li>
+                        <li>Chicken 65</li>
+                        <li>Dal Makhani</li>
+                        <li>Gulab Jamun</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates about our special offers and events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Happy Food. All rights reserved. | Designed with ❤️ for Hyderabad</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
